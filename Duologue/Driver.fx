@@ -214,9 +214,10 @@ float3 DriverCore(float2 uv)
 }
 
 // Lightweight uniform “mailbox” between passes
-uniform float g_adaptDeband     < source = "unknown"; > = 1.0;
-uniform float g_adaptEdgeBoost  < source = "unknown"; > = 0.0;
-uniform float g_adaptSharpen    < source = "unknown"; > = 1.0;
+static float g_adaptDeband = 1.0;
+static float g_adaptEdgeBoost = 0.0;
+static float g_adaptSharpen = 1.0;
+
 
 // ------------------------------------------------------------
 // Pass shaders
