@@ -10,7 +10,7 @@ sampler BackBuffer
     MinFilter = Linear;
     MagFilter = Linear;
     MipFilter = Linear;
-}
+};
 
 float2 px()
 {
